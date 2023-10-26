@@ -48,4 +48,27 @@ class Personne
     {
         $this->matricule = $matricule;
     }
+
+    public function verifNom($nom)
+    {
+        if (!is_string($nom)) {
+            echo "Désolé mon frere mais ca doit etre une chaine de caractere OYOKI ?";
+        } else {
+            return $nom;
+        }
+    }
+
+    public function verifPrenom($prenom)
+    {
+        if (!is_string($prenom)) {
+            echo "Désolé mon frere mais Lé PRENOM ca doit etre une chaine de caractere OYOKI ?";
+        } else {
+            return $prenom;
+        }
+    }
+
+    public function verifMatricule($matricule)
+    {
+        return htmlspecialchars($matricule);
+    }
 }

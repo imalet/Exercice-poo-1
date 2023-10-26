@@ -37,17 +37,17 @@ class Professeur extends Personne implements Presentation
     // Setters
     function setSalaire($salaire)
     {
-        $this->salaire;
+        $this->salaire = $this->verifSalaire($salaire);
     }
 
     function setSpecialite($specialite)
     {
-        $this->specialite = $specialite;
+        $this->specialite = $this->verifSpecialite($specialite);
     }
 
     function setVoiture($voiture)
     {
-        $this->voiture;
+        $this->voiture = $this->verifVoiture($voiture);
     }
 
     //..........................
